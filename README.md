@@ -88,6 +88,18 @@
 	}
 	
 	
+	Notification: {
+	
+		id: number,
+		
+		referred: number #user.id,
+		
+		referrer: number #user.id,
+		
+		created_on: datetime,	
+	}
+	
+	
 	### Background
 
 	`Ticket[total_waiting_time]` is the cumulative time in hours and minutes spent by a suser waiting at different stations.
@@ -151,6 +163,8 @@
 	---
 	
 	### Required
+
+	When a user is referred by another user, send notification on dashboard and an SMS to both users (referred and referrer)
 	
 	Send an SMS to the user with, and avail to dashboard view:
 	
