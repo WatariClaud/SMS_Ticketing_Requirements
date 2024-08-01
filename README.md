@@ -14,7 +14,11 @@
  		
  		mobile_number: string,
  		
- 		is_engineer: boolean # manages role on frontend views
+ 		is_engineer: boolean #manages role on frontend views,
+ 		
+ 		ref_number: number #track users referred by another user,
+ 		
+ 		referred_by: number `#User[id]` of referrer
  		
 	}
 	
