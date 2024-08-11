@@ -14,7 +14,7 @@
  		
  		mobile_number: string,
  		
- 		is_engineer: boolean #manages role on frontend views,
+ 		role: string #manages role on frontend views,
  		
  		ref_number: number #track users referred by another user,
  		
@@ -73,6 +73,8 @@
 		id: number,
 		
 		by_ticket: number #ticket.id,
+		
+		next_station: number #station[id],
 		
 		is_waiting: boolean,
 		
